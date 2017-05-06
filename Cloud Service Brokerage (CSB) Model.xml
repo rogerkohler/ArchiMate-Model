@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate http://www.opengroup.org/xsd/archimate/archimate_v2p1.xsd" identifier="id-11f5304f">
+  <name xml:lang="en">Cloud Service Brokerage (CSB) Model</name>
+  <documentation xml:lang="en">- This is model presents views of a Cloud Service Brokerage (CSB) function within an enterprise.  &#xD;
+- To view the model on ArchiMate, go to file &gt; Import &gt; Model from Open Exchange file and select this file.</documentation>
+  <properties>
+    <property identifierref="propid-1">
+      <value xml:lang="en">Muhanad Mahmoud</value>
+    </property>
+    <property identifierref="propid-2">
+      <value xml:lang="en">University of Liverpool</value>
+    </property>
+    <property identifierref="propid-3">
+      <value xml:lang="en">H00035824</value>
+    </property>
+    <property identifierref="propid-4">
+      <value xml:lang="en">Cloud Service Brokerage (CSB) Framework for Managing IT Workloads in Hybrid Cloud Environments</value>
+    </property>
+    <property identifierref="propid-5">
+      <value xml:lang="en">MSc in Information Systems Management</value>
+    </property>
+  </properties>
+  <elements>
+    <element identifier="id-069aa985" xsi:type="BusinessFunction">
+      <label xml:lang="en">Governance and Compliance</label>
+    </element>
+    <element identifier="id-e67bdb18" xsi:type="BusinessFunction">
+      <label xml:lang="en">CSB Front-End Portal</label>
+    </element>
+    <element identifier="id-5c972eb4" xsi:type="BusinessService">
+      <label xml:lang="en">Aggregation Services</label>
+    </element>
+    <element identifier="id-671c9b62" xsi:type="BusinessService">
+      <label xml:lang="en">CSC Registration Services</label>
+    </element>
+    <element identifier="id-fc2473ad" xsi:type="BusinessService">
+      <label xml:lang="en">Discovery Services</label>
+    </element>
+    <element identifier="id-39246e1e" xsi:type="BusinessService">
+      <label xml:lang="en">Operation Services</label>
+    </element>
+    <element identifier="id-ca2db67f" xsi:type="BusinessService">
+      <label xml:lang="en">Automation Services</label>
+    </element>
+    <element identifier="id-243ac07e" xsi:type="BusinessRole">
+      <label xml:lang="en">Cloud Service Consumer (CSC)</label>
+    </element>
+    <element identifier="id-7a89bade" xsi:type="BusinessActor">
+      <label xml:lang="en">CSB Developer</label>
+    </element>
+    <element identifier="id-f20906e4" xsi:type="BusinessProcess">
+      <label xml:lang="en">Fulfill Order</label>
+    </element>
+    <element identifier="id-44f8c168" xsi:type="Location">
+      <label xml:lang="en">CSP1</label>
+    </element>
+    <element identifier="id-4ab88869" xsi:type="Location">
+      <label xml:lang="en">CSP2</label>
+    </element>
+    <element identifier="id-9f60c123" xsi:type="Location">
+      <label xml:lang="en">CSPn</label>
+    </element>
+    <element identifier="id-599be9de" xsi:type="BusinessActor">
+      <label xml:lang="en">Cloud Service Provider (CSP)</label>
+    </element>
+    <element identifier="id-b40c2d73" xsi:type="BusinessActor">
+      <label xml:lang="en">Cloud Service Consumer (CSC)</label>
+    </element>
+    <element identifier="id-3f6db80e" xsi:type="BusinessActor">
+      <label xml:lang="en">CSP Business Owner</label>
+    </element>
+    <element identifier="id-00487683" xsi:type="BusinessActor">
+      <label xml:lang="en">CSC Business Owner</label>
+    </element>
+    <element identifier="id-670d256f" xsi:type="Contract">
+      <label xml:lang="en">CSP&lt;--&gt;CSB Contract</label>
+    </element>
+    <element identifier="id-305dd86f" xsi:type="BusinessFunction">
+      <label xml:lang="en">Accounting and Billing</label>
+    </element>
+    <element identifier="id-bbcafed7" xsi:type="BusinessObject">
+      <label xml:lang="en">Rated Resources</label>
+    </element>
+    <element identifier="id-ae7a6a13" xsi:type="BusinessObject">
+      <label xml:lang="en">Service Order</label>
+    </element>
+    <element identifier="id-521" xsi:type="BusinessRole">
+      <label xml:lang="en">Cloud Service Consumer (CSC)</label>
+    </element>
+    <element identifier="id-507" xsi:type="BusinessRole">
+      <label xml:lang="en">Cloud Service Provider (CSP)</label>
+    </element>
+    <element identifier="id-514" xsi:type="BusinessRole">
+      <label xml:lang="en">Cloud Service Broker (CSB)</label>
+    </element>
+    <element identifier="id-733" xsi:type="BusinessCollaboration">
+      <label xml:lang="en">Negotiation</label>
+    </element>
+    <element identifier="id-740" xsi:type="BusinessCollaboration">
+      <label xml:lang="en">Contracting</label>
+    </element>
+    <element identifier="id-282" xsi:type="BusinessActor">
+      <label xml:lang="en">CSB Manager</label>
+    </element>
+    <element identifier="id-352" xsi:type="BusinessActor">
+      <label xml:lang="en">CSB Service Owner</label>
+    </element>
+    <element identifier="id-275" xsi:type="BusinessActor">
+      <label xml:lang="en">Cloud Service Broker (CSB)</label>
+    </element>
+    <element identifier="id-471" xsi:type="BusinessFunction">
+      <label xml:lang="en">Cloud Service Consumer (CSC) Management</label>
+    </element>
+    <element identifier="id-477" xsi:type="BusinessFunction">
+      <label xml:lang="en">Cloud Service Provider (CSP) Management</label>
+    </element>
+    <element identifier="id-489" xsi:type="BusinessFunction">
+      <label xml:lang="en">Accounting and Billing</label>
+      <documentation xml:lang="en">Contracts with agreed rates, SLAs and QoS</documentation>
+    </element>
+    <element identifier="id-792" xsi:type="BusinessObject">
+      <label xml:lang="en">Service Template</label>
+    </element>
+    <element identifier="id-675" xsi:type="BusinessObject">
+      <label xml:lang="en">Quote</label>
+    </element>
+    <element identifier="id-673" xsi:type="BusinessObject">
+      <label xml:lang="en">Catalogue Items</label>
+    </element>
+    <element identifier="id-722" xsi:type="BusinessInteraction">
+      <label xml:lang="en">Check and  Sign Contract</label>
+    </element>
+    <element identifier="id-721" xsi:type="BusinessInteraction">
+      <label xml:lang="en">Submit Request</label>
+    </element>
+    <element identifier="id-651" xsi:type="BusinessEvent">
+      <label xml:lang="en">Submit Service Requirements</label>
+    </element>
+    <element identifier="id-650" xsi:type="BusinessEvent">
+      <label xml:lang="en">Account Registration</label>
+    </element>
+    <element identifier="id-612" xsi:type="BusinessProcess">
+      <label xml:lang="en">Create Contract</label>
+    </element>
+    <element identifier="id-556" xsi:type="BusinessProcess">
+      <label xml:lang="en">Service Request Business Process</label>
+    </element>
+    <element identifier="id-572" xsi:type="BusinessProcess">
+      <label xml:lang="en">Validation</label>
+    </element>
+    <element identifier="id-580" xsi:type="BusinessProcess">
+      <label xml:lang="en">Mapping</label>
+    </element>
+    <element identifier="id-588" xsi:type="BusinessProcess">
+      <label xml:lang="en">Quotation</label>
+    </element>
+    <element identifier="id-564" xsi:type="BusinessProcess">
+      <label xml:lang="en">Logging</label>
+    </element>
+    <element identifier="id-596" xsi:type="BusinessProcess">
+      <label xml:lang="en">Registration Business Process</label>
+    </element>
+    <element identifier="id-1250" xsi:type="Value">
+      <label xml:lang="en">Informed Decisions and Optimized Operations</label>
+    </element>
+    <element identifier="id-1239" xsi:type="Contract">
+      <label xml:lang="en">CSC&lt;--&gt;CSB Contract</label>
+    </element>
+    <element identifier="id-1208" xsi:type="BusinessService">
+      <label xml:lang="en">CSC Self-Services</label>
+    </element>
+    <element identifier="id-1214" xsi:type="BusinessService">
+      <label xml:lang="en">Customization Services</label>
+    </element>
+    <element identifier="id-1196" xsi:type="BusinessService">
+      <label xml:lang="en">Intermediation Services</label>
+    </element>
+    <element identifier="id-1220" xsi:type="BusinessService">
+      <label xml:lang="en">CSP Registration Services</label>
+    </element>
+    <element identifier="id-8b23fb39" xsi:type="ApplicationService">
+      <label xml:lang="en">Matching Service</label>
+    </element>
+    <element identifier="id-f1795cb2" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Database Repository</label>
+    </element>
+    <element identifier="id-43d9bff5" xsi:type="ApplicationComponent">
+      <label xml:lang="en">User Demand and Requirements</label>
+    </element>
+    <element identifier="id-d98f44d0" xsi:type="ApplicationCollaboration">
+      <label xml:lang="en">Front-End Portal</label>
+    </element>
+    <element identifier="id-33e7b637" xsi:type="DataObject">
+      <label xml:lang="en">Reports</label>
+    </element>
+    <element identifier="id-3f8ba443" xsi:type="DataObject">
+      <label xml:lang="en">Notifications</label>
+    </element>
+    <element identifier="id-dae2a9db" xsi:type="ApplicationComponent">
+      <label xml:lang="en">User Demand and Requirements</label>
+    </element>
+    <element identifier="id-23501cf6" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Service Store and Catalogue</label>
+    </element>
+    <element identifier="id-939f302b" xsi:type="DataObject">
+      <label xml:lang="en">CSP Rates Data</label>
+    </element>
+    <element identifier="id-891" xsi:type="ApplicationFunction">
+      <label xml:lang="en">Generate Attributes</label>
+    </element>
+    <element identifier="id-897" xsi:type="ApplicationFunction">
+      <label xml:lang="en">Select Catalogue Items</label>
+    </element>
+    <element identifier="id-903" xsi:type="ApplicationFunction">
+      <label xml:lang="en">Create Templates</label>
+    </element>
+    <element identifier="id-861" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Service Life Cycle Management</label>
+    </element>
+    <element identifier="id-855" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Dashboard and Reporting</label>
+    </element>
+    <element identifier="id-849" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Workload Management</label>
+    </element>
+    <element identifier="id-867" xsi:type="ApplicationComponent">
+      <label xml:lang="en">Service Store and Catalogue</label>
+    </element>
+    <element identifier="id-935" xsi:type="ApplicationService">
+      <label xml:lang="en">Matching Service</label>
+    </element>
+    <element identifier="id-946" xsi:type="DataObject">
+      <label xml:lang="en">CSC Service Requirements Data</label>
+    </element>
+    <element identifier="id-837" xsi:type="DataObject">
+      <label xml:lang="en">Bills</label>
+    </element>
+    <element identifier="id-839" xsi:type="DataObject">
+      <label xml:lang="en">CSB Catalogue Data</label>
+    </element>
+    <element identifier="id-1089" xsi:type="Network">
+      <label xml:lang="en">LAN</label>
+    </element>
+    <element identifier="id-1022" xsi:type="SystemSoftware">
+      <label xml:lang="en">Resources Scheduling and Optimization</label>
+    </element>
+    <element identifier="id-1016" xsi:type="SystemSoftware">
+      <label xml:lang="en">Security and Access Management</label>
+    </element>
+    <element identifier="id-1010" xsi:type="SystemSoftware">
+      <label xml:lang="en">Cloud Orchestration</label>
+    </element>
+    <element identifier="id-998" xsi:type="Node">
+      <label xml:lang="en">API Gateway</label>
+    </element>
+    <element identifier="id-986" xsi:type="Node">
+      <label xml:lang="en">Software Manager</label>
+    </element>
+    <element identifier="id-c6e7b50c" xsi:type="CommunicationPath">
+      <label xml:lang="en">Communication Path</label>
+    </element>
+    <element identifier="id-fa566762" xsi:type="SystemSoftware">
+      <label xml:lang="en">Infrastructure Management</label>
+    </element>
+    <element identifier="id-f90cfadb" xsi:type="InfrastructureService">
+      <label xml:lang="en">Fulfillment of Service Requests</label>
+    </element>
+    <element identifier="id-ed75e4a9" xsi:type="InfrastructureService">
+      <label xml:lang="en">Automation of Workloads</label>
+    </element>
+    <element identifier="id-ed5e9853" xsi:type="InfrastructureService">
+      <label xml:lang="en">Registration of CSCs and CSPs</label>
+    </element>
+    <element identifier="id-f5674126" xsi:type="Principle">
+      <label xml:lang="en">Simple and Clear Processes Goal</label>
+    </element>
+    <element identifier="id-3938617c" xsi:type="Principle">
+      <label xml:lang="en">Self-Service Principle</label>
+    </element>
+    <element identifier="id-67316f1f" xsi:type="Principle">
+      <label xml:lang="en">Policies and Rules Principle</label>
+    </element>
+    <element identifier="id-b56d54a6" xsi:type="Principle">
+      <label xml:lang="en">Dynamic Workloads Allocation Goal</label>
+    </element>
+    <element identifier="id-3764dcef" xsi:type="Principle">
+      <label xml:lang="en">Automated Operations Goals</label>
+    </element>
+    <element identifier="id-66a2171b" xsi:type="Principle">
+      <label xml:lang="en">Costs Control Goal</label>
+    </element>
+    <element identifier="id-af0e8c76" xsi:type="Principle">
+      <label xml:lang="en">Real-Time Charging Principle</label>
+    </element>
+    <element identifier="id-3db08b5c" xsi:type="Principle">
+      <label xml:lang="en">Usage Quotas and Notifications Principle</label>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-615a4b92" source="id-514" target="id-069aa985" xsi:type="AssignmentRelationship" />
+    <relationship identifier="id-605f158f" source="id-471" target="id-489" xsi:type="FlowRelationship">
+      <label xml:lang="en">CSC Quotas</label>
+      <documentation xml:lang="en">Contracts with agreed rates, SLAs and QoS</documentation>
+    </relationship>
+    <relationship identifier="id-28e2cb1c" source="id-514" target="id-e67bdb18" xsi:type="AssignmentRelationship" />
+    <relationship identifier="id-cb8b36a5" source="id-477" target="id-e67bdb18" xsi:type="FlowRelationship">
+      <label xml:lang="en">CSP Info</label>
+    </relationship>
+    <relationship identifier="id-f310c65e" source="id-471" target="id-e67bdb18" xsi:type="FlowRelationship">
+      <label xml:lang="en">CSC Info</label>
+    </relationship>
+    <relationship identifier="id-b0bddc58" source="id-069aa985" target="id-477" xsi:type="FlowRelationship">
+      <label xml:lang="en">Policies</label>
+    </relationship>
+    <relationship identifier="id-2856cd8a" source="id-069aa985" target="id-471" xsi:type="FlowRelationship">
+      <label xml:lang="en">Policies</label>
+    </relationship>
+    <relationship identifier="id-4c3e755b" source="id-489" target="id-e67bdb18" xsi:type="FlowRelationship">
+      <label xml:lang="en">Bills</label>
+    </relationship>
+    <relationship identifier="id-050377cd" source="id-521" target="id-e67bdb18" xsi:type="FlowRelationship">
+      <label xml:lang="en">Service Request</label>
+    </relationship>
+    <relationship identifier="id-f89eca07" source="id-e67bdb18" target="id-521" xsi:type="FlowRelationship">
+      <label xml:lang="en">Self-Service</label>
+    </relationship>
+    <relationship identifier="id-314875e6" source="id-521" target="id-471" xsi:type="FlowRelationship">
+      <label xml:lang="en">CSC Info</label>
+    </relationship>
+    <relationship identifier="id-7f85b405" source="id-471" target="id-521" xsi:type="FlowRelationship">
+      <label xml:lang="en">Contract</label>
+    </relationship>
+    <relationship identifier="id-439d49e7" source="id-507" target="id-477" xsi:type="FlowRelationship">
+      <label xml:lang="en">CSP Info</label>
+    </relationship>
+    <relationship identifier="id-fef24f2f" source="id-477" target="id-507" xsi:type="FlowRelationship">
+      <label xml:lang="en">Contract</label>
+    </relationship>
+    <relationship identifier="id-722e0a2e" source="id-477" target="id-471" xsi:type="AssociationRelationship">
+      <label xml:lang="en">Align</label>
+    </relationship>
+    <relationship identifier="id-ec8dadf1" source="id-243ac07e" target="id-651" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-caa19a08" source="id-588" target="id-243ac07e" xsi:type="TriggeringRelationship">
+      <label xml:lang="en">Provide Approval</label>
+    </relationship>
+    <relationship identifier="id-dbb03c7a" source="id-998" target="id-c6e7b50c" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-bf5839ca" source="id-c6e7b50c" target="id-44f8c168" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-95cd673b" source="id-c6e7b50c" target="id-4ab88869" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-166bd314" source="id-c6e7b50c" target="id-9f60c123" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-d9a7d392" source="id-986" target="id-ed75e4a9" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-80a90ac6" source="id-986" target="id-f90cfadb" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-07d532f0" source="id-986" target="id-ed5e9853" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-68c53c53" source="id-588" target="id-f20906e4" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-b9c46b5d" source="id-8b23fb39" target="id-580" xsi:type="UsedByRelationship" />
+    <relationship identifier="id-3a2e180b" source="id-d98f44d0" target="id-43d9bff5" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-0e0cc559" source="id-d98f44d0" target="id-867" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-40a8e557" source="id-d98f44d0" target="id-855" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-b4c41738" source="id-d98f44d0" target="id-837" xsi:type="AccessRelationship" />
+    <relationship identifier="id-5365f186" source="id-d98f44d0" target="id-33e7b637" xsi:type="AccessRelationship" />
+    <relationship identifier="id-86a08592" source="id-d98f44d0" target="id-3f8ba443" xsi:type="AccessRelationship" />
+    <relationship identifier="id-7f9abd95" source="id-3f6db80e" target="id-282" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-df8e9a8c" source="id-00487683" target="id-282" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-f96d4d1e" source="id-867" target="id-861" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-4875c48d" source="id-861" target="id-849" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-66ee68d7" source="id-43d9bff5" target="id-867" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-95007dc1" source="id-43d9bff5" target="id-849" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-2cfa31bb" source="id-891" target="id-946" xsi:type="AccessRelationship" />
+    <relationship identifier="id-0345f4dc" source="id-891" target="id-897" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-d7aeb5e9" source="id-23501cf6" target="id-935" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-5dac4ae3" source="id-897" target="id-903" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-1fc33207" source="id-282" target="id-352" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-3cf5b650" source="id-7a89bade" target="id-352" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-b7f89158" source="id-243ac07e" target="id-588" xsi:type="TriggeringRelationship">
+      <label xml:lang="en">Approved Order</label>
+    </relationship>
+    <relationship identifier="id-3c83b583" source="id-572" target="id-069aa985" xsi:type="SpecialisationRelationship" />
+    <relationship identifier="id-2c9adbd3" source="id-588" target="id-305dd86f" xsi:type="SpecialisationRelationship" />
+    <relationship identifier="id-95f80f40" source="id-946" target="id-792" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-08cf3760" source="id-839" target="id-673" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-b3bccc0a" source="id-939f302b" target="id-bbcafed7" xsi:type="RealisationRelationship" />
+    <relationship identifier="id-e87fe7a7" source="id-675" target="id-bbcafed7" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-c757a645" source="id-ae7a6a13" target="id-673" xsi:type="CompositionRelationship" />
+    <relationship identifier="id-47a0b327" source="id-ae7a6a13" target="id-675" xsi:type="CompositionRelationship" />
+    <relationship identifier="id-95126dde" source="id-ae7a6a13" target="id-792" xsi:type="CompositionRelationship" />
+    <relationship identifier="id-655" source="id-651" target="id-564" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-657" source="id-564" target="id-572" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-728" source="id-721" target="id-612" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-659" source="id-572" target="id-580" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-661" source="id-580" target="id-588" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-732" source="id-650" target="id-721" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-2d89d4e7" source="id-612" target="id-722" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-756" source="id-733" target="id-521" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-760" source="id-733" target="id-507" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-758" source="id-733" target="id-514" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-762" source="id-740" target="id-507" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-764" source="id-740" target="id-514" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-768" source="id-740" target="id-521" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-774" source="id-514" target="id-612" xsi:type="AssignmentRelationship" />
+    <relationship identifier="id-772" source="id-733" target="id-721" xsi:type="AssignmentRelationship" />
+    <relationship identifier="id-1259" source="id-521" target="id-1250" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-4a214d41" source="id-740" target="id-722" xsi:type="AssignmentRelationship" />
+    <relationship identifier="id-95f13189" source="id-521" target="id-650" xsi:type="TriggeringRelationship" />
+    <relationship identifier="id-816" source="id-675" target="id-792" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-814" source="id-675" target="id-673" xsi:type="AggregationRelationship" />
+    <relationship identifier="id-1764" source="id-477" target="id-489" xsi:type="FlowRelationship">
+      <label xml:lang="en">Rates</label>
+    </relationship>
+    <relationship identifier="id-1274" source="id-1250" target="id-1208" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-670aa5ed" source="id-986" target="id-1089" xsi:type="AssociationRelationship" />
+    <relationship identifier="id-197b66d6" source="id-1089" target="id-998" xsi:type="AssociationRelationship" />
+  </relationships>
+  <organization>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item>
+        <label xml:lang="en">Actors</label>
+        <item identifierref="id-521" />
+        <item identifierref="id-507" />
+        <item identifierref="id-514" />
+        <item identifierref="id-733" />
+        <item identifierref="id-740" />
+        <item identifierref="id-282" />
+        <item identifierref="id-352" />
+        <item identifierref="id-275" />
+      </item>
+      <item>
+        <label xml:lang="en">Functions</label>
+        <item identifierref="id-471" />
+        <item identifierref="id-477" />
+        <item identifierref="id-489" />
+      </item>
+      <item>
+        <label xml:lang="en">Information</label>
+        <item identifierref="id-792" />
+        <item identifierref="id-675" />
+        <item identifierref="id-673" />
+      </item>
+      <item>
+        <label xml:lang="en">Processes</label>
+        <item identifierref="id-722" />
+        <item identifierref="id-721" />
+        <item identifierref="id-651" />
+        <item identifierref="id-650" />
+        <item identifierref="id-612" />
+        <item identifierref="id-556" />
+        <item identifierref="id-572" />
+        <item identifierref="id-580" />
+        <item identifierref="id-588" />
+        <item identifierref="id-564" />
+        <item identifierref="id-596" />
+      </item>
+      <item>
+        <label xml:lang="en">Products</label>
+        <item identifierref="id-1250" />
+        <item identifierref="id-1239" />
+        <item identifierref="id-1208" />
+        <item identifierref="id-1214" />
+        <item identifierref="id-1196" />
+        <item identifierref="id-1220" />
+      </item>
+      <item identifierref="id-069aa985" />
+      <item identifierref="id-e67bdb18" />
+      <item identifierref="id-5c972eb4" />
+      <item identifierref="id-671c9b62" />
+      <item identifierref="id-fc2473ad" />
+      <item identifierref="id-39246e1e" />
+      <item identifierref="id-ca2db67f" />
+      <item identifierref="id-243ac07e" />
+      <item identifierref="id-7a89bade" />
+      <item identifierref="id-f20906e4" />
+      <item identifierref="id-44f8c168" />
+      <item identifierref="id-4ab88869" />
+      <item identifierref="id-9f60c123" />
+      <item identifierref="id-599be9de" />
+      <item identifierref="id-b40c2d73" />
+      <item identifierref="id-3f6db80e" />
+      <item identifierref="id-00487683" />
+      <item identifierref="id-670d256f" />
+      <item identifierref="id-305dd86f" />
+      <item identifierref="id-bbcafed7" />
+      <item identifierref="id-ae7a6a13" />
+    </item>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item>
+        <label xml:lang="en">Applications</label>
+        <item identifierref="id-891" />
+        <item identifierref="id-897" />
+        <item identifierref="id-903" />
+        <item identifierref="id-861" />
+        <item identifierref="id-855" />
+        <item identifierref="id-849" />
+        <item identifierref="id-867" />
+        <item identifierref="id-935" />
+      </item>
+      <item>
+        <label xml:lang="en">Data</label>
+        <item identifierref="id-946" />
+        <item identifierref="id-837" />
+        <item identifierref="id-839" />
+      </item>
+      <item identifierref="id-8b23fb39" />
+      <item identifierref="id-f1795cb2" />
+      <item identifierref="id-43d9bff5" />
+      <item identifierref="id-d98f44d0" />
+      <item identifierref="id-33e7b637" />
+      <item identifierref="id-3f8ba443" />
+      <item identifierref="id-dae2a9db" />
+      <item identifierref="id-23501cf6" />
+      <item identifierref="id-939f302b" />
+    </item>
+    <item>
+      <label xml:lang="en">Technology</label>
+      <item identifierref="id-1089" />
+      <item identifierref="id-1022" />
+      <item identifierref="id-1016" />
+      <item identifierref="id-1010" />
+      <item identifierref="id-998" />
+      <item identifierref="id-986" />
+      <item identifierref="id-c6e7b50c" />
+      <item identifierref="id-fa566762" />
+      <item identifierref="id-f90cfadb" />
+      <item identifierref="id-ed75e4a9" />
+      <item identifierref="id-ed5e9853" />
+    </item>
+    <item>
+      <label xml:lang="en">Motivation</label>
+      <item identifierref="id-f5674126" />
+      <item identifierref="id-3938617c" />
+      <item identifierref="id-67316f1f" />
+      <item identifierref="id-b56d54a6" />
+      <item identifierref="id-3764dcef" />
+      <item identifierref="id-66a2171b" />
+      <item identifierref="id-af0e8c76" />
+      <item identifierref="id-3db08b5c" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item>
+        <label xml:lang="en">Business</label>
+        <item>
+          <label xml:lang="en">Processes</label>
+          <item identifierref="id-655" />
+          <item identifierref="id-657" />
+          <item identifierref="id-728" />
+          <item identifierref="id-659" />
+          <item identifierref="id-661" />
+          <item identifierref="id-732" />
+          <item identifierref="id-2d89d4e7" />
+        </item>
+        <item>
+          <label xml:lang="en">Actors</label>
+          <item identifierref="id-756" />
+          <item identifierref="id-760" />
+          <item identifierref="id-758" />
+          <item identifierref="id-762" />
+          <item identifierref="id-764" />
+          <item identifierref="id-768" />
+          <item identifierref="id-774" />
+          <item identifierref="id-772" />
+          <item identifierref="id-1259" />
+          <item identifierref="id-4a214d41" />
+          <item identifierref="id-95f13189" />
+        </item>
+        <item>
+          <label xml:lang="en">Information</label>
+          <item identifierref="id-816" />
+          <item identifierref="id-814" />
+        </item>
+        <item>
+          <label xml:lang="en">Functions</label>
+          <item identifierref="id-1764" />
+        </item>
+        <item>
+          <label xml:lang="en">Products</label>
+          <item identifierref="id-1274" />
+        </item>
+      </item>
+      <item>
+        <label xml:lang="en">Application</label>
+      </item>
+      <item>
+        <label xml:lang="en">Technology</label>
+        <item identifierref="id-670aa5ed" />
+        <item identifierref="id-197b66d6" />
+      </item>
+      <item identifierref="id-615a4b92" />
+      <item identifierref="id-605f158f" />
+      <item identifierref="id-28e2cb1c" />
+      <item identifierref="id-cb8b36a5" />
+      <item identifierref="id-f310c65e" />
+      <item identifierref="id-b0bddc58" />
+      <item identifierref="id-2856cd8a" />
+      <item identifierref="id-4c3e755b" />
+      <item identifierref="id-050377cd" />
+      <item identifierref="id-f89eca07" />
+      <item identifierref="id-314875e6" />
+      <item identifierref="id-7f85b405" />
+      <item identifierref="id-439d49e7" />
+      <item identifierref="id-fef24f2f" />
+      <item identifierref="id-722e0a2e" />
+      <item identifierref="id-ec8dadf1" />
+      <item identifierref="id-caa19a08" />
+      <item identifierref="id-dbb03c7a" />
+      <item identifierref="id-bf5839ca" />
+      <item identifierref="id-95cd673b" />
+      <item identifierref="id-166bd314" />
+      <item identifierref="id-d9a7d392" />
+      <item identifierref="id-80a90ac6" />
+      <item identifierref="id-07d532f0" />
+      <item identifierref="id-68c53c53" />
+      <item identifierref="id-b9c46b5d" />
+      <item identifierref="id-3a2e180b" />
+      <item identifierref="id-0e0cc559" />
+      <item identifierref="id-40a8e557" />
+      <item identifierref="id-b4c41738" />
+      <item identifierref="id-5365f186" />
+      <item identifierref="id-86a08592" />
+      <item identifierref="id-7f9abd95" />
+      <item identifierref="id-df8e9a8c" />
+      <item identifierref="id-f96d4d1e" />
+      <item identifierref="id-4875c48d" />
+      <item identifierref="id-66ee68d7" />
+      <item identifierref="id-95007dc1" />
+      <item identifierref="id-2cfa31bb" />
+      <item identifierref="id-0345f4dc" />
+      <item identifierref="id-d7aeb5e9" />
+      <item identifierref="id-5dac4ae3" />
+      <item identifierref="id-1fc33207" />
+      <item identifierref="id-3cf5b650" />
+      <item identifierref="id-b7f89158" />
+      <item identifierref="id-3c83b583" />
+      <item identifierref="id-2c9adbd3" />
+      <item identifierref="id-95f80f40" />
+      <item identifierref="id-08cf3760" />
+      <item identifierref="id-b3bccc0a" />
+      <item identifierref="id-e87fe7a7" />
+      <item identifierref="id-c757a645" />
+      <item identifierref="id-47a0b327" />
+      <item identifierref="id-95126dde" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierref="id-3641" />
+      <item identifierref="id-3944" />
+      <item identifierref="id-3893" />
+      <item identifierref="id-3761" />
+      <item identifierref="id-3698" />
+      <item identifierref="id-3722" />
+      <item identifierref="id-3821" />
+      <item identifierref="id-3865" />
+      <item identifierref="id-3999" />
+      <item identifierref="id-16fe3cf9" />
+    </item>
+  </organization>
+  <propertydefs>
+    <propertydef identifier="propid-1" name="Design By" type="string" />
+    <propertydef identifier="propid-4" name="Dissertation Title" type="string" />
+    <propertydef identifier="propid-5" name="For Degree" type="string" />
+    <propertydef identifier="propid-junctionType" name="JunctionType" type="string" />
+    <propertydef identifier="propid-3" name="Student ID" type="string" />
+    <propertydef identifier="propid-2" name="University Name" type="string" />
+  </propertydefs>
+  <views>
+    <view identifier="id-3641">
+      <label xml:lang="en">Archimate View</label>
+    </view>
+    <view identifier="id-3944" viewpoint="Application Structure">
+      <label xml:lang="en">Application Structure View</label>
+      <node identifier="id-3953" elementref="id-837" x="756" y="156" w="109" h="37">
+        <style>
+          <fillColor r="128" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-5a850d8a" x="96" y="84" w="601" h="361" type="group">
+        <label xml:lang="en">CSB Applications</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-3958" elementref="id-849" x="132" y="336" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3961" elementref="id-861" x="125" y="132" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3959" elementref="id-855" x="516" y="108" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3960" elementref="id-867" x="312" y="192" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-295704c3" elementref="id-43d9bff5" x="516" y="277" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-f0d0ad49" elementref="id-d98f44d0" x="540" y="203" w="145" h="37">
+          <style>
+            <fillColor r="181" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-6f890df1" elementref="id-f1795cb2" x="540" y="372" w="140" h="60">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-f82bf8f3" elementref="id-33e7b637" x="756" y="204" w="109" h="37">
+        <style>
+          <fillColor r="128" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-9d740015" elementref="id-3f8ba443" x="756" y="252" w="109" h="37">
+        <style>
+          <fillColor r="128" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <connection identifier="id-a72e5933" relationshipref="id-4875c48d" source="id-3961" target="id-3958">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-eabdb6b2" relationshipref="id-f96d4d1e" source="id-3960" target="id-3961">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-7bfd4bec" relationshipref="id-66ee68d7" source="id-295704c3" target="id-3960">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-cf5c77ec" relationshipref="id-95007dc1" source="id-295704c3" target="id-3958">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-f26268b8" relationshipref="id-3a2e180b" source="id-f0d0ad49" target="id-295704c3">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-ca120b8e" relationshipref="id-0e0cc559" source="id-f0d0ad49" target="id-3960">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-d4e7ccee" relationshipref="id-40a8e557" source="id-f0d0ad49" target="id-3959">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-9a47d270" relationshipref="id-b4c41738" source="id-f0d0ad49" target="id-3953">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-48d8508e" relationshipref="id-5365f186" source="id-f0d0ad49" target="id-f82bf8f3">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-dd061918" relationshipref="id-86a08592" source="id-f0d0ad49" target="id-9d740015">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3893" viewpoint="Infrastructure">
+      <label xml:lang="en">Technical Infrastructure View</label>
+      <node identifier="id-3906" x="108" y="120" w="409" h="397" type="group">
+        <label xml:lang="en">CSB Technical System</label>
+        <style>
+          <fillColor r="218" g="254" b="203" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-3912" elementref="id-1089" x="408" y="432" w="80" h="40">
+          <style>
+            <fillColor r="201" g="231" b="183" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3919" elementref="id-986" x="132" y="192" w="205" h="301">
+          <style>
+            <fillColor r="0" g="128" b="64" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+          <node identifier="id-3923" elementref="id-1010" x="170" y="300" w="120" h="49">
+            <style>
+              <fillColor r="201" g="231" b="183" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+          <node identifier="id-3921" elementref="id-1022" x="168" y="228" w="123" h="57">
+            <style>
+              <fillColor r="201" g="231" b="183" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+          <node identifier="id-3922" elementref="id-1016" x="168" y="408" w="123" h="61">
+            <style>
+              <fillColor r="201" g="231" b="183" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+          <node identifier="id-76910ad9" elementref="id-fa566762" x="170" y="360" w="120" h="37">
+            <style>
+              <fillColor r="201" g="231" b="183" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+        </node>
+        <node identifier="id-3917" elementref="id-998" x="408" y="288" w="88" h="50">
+          <style>
+            <fillColor r="0" g="128" b="64" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-fca8614a" elementref="id-c6e7b50c" x="540" y="306" w="193" h="25">
+        <style>
+          <fillColor r="201" g="231" b="183" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-034eeaf2" elementref="id-44f8c168" x="780" y="204" w="120" h="55">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3463729c" elementref="id-4ab88869" x="780" y="297" w="120" h="55">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-c7fea800" elementref="id-9f60c123" x="780" y="396" w="120" h="55">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-f6669528" elementref="id-f90cfadb" x="360" y="48" w="120" h="55">
+        <style>
+          <fillColor r="201" g="231" b="183" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-98fb13a5" elementref="id-ed75e4a9" x="72" y="48" w="120" h="55">
+        <style>
+          <fillColor r="201" g="231" b="183" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-364566ce" elementref="id-ed5e9853" x="216" y="24" w="120" h="55">
+        <style>
+          <fillColor r="201" g="231" b="183" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <connection identifier="id-98a08345" relationshipref="id-197b66d6" source="id-3912" target="id-3917">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-44904351" relationshipref="id-670aa5ed" source="id-3919" target="id-3912">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-2a0d05a5" relationshipref="id-d9a7d392" source="id-3919" target="id-98fb13a5">
+        <bendpoint x="192" y="144" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-702edebe" relationshipref="id-80a90ac6" source="id-3919" target="id-f6669528">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-1d7c8d18" relationshipref="id-07d532f0" source="id-3919" target="id-364566ce">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-8524e723" relationshipref="id-dbb03c7a" source="id-3917" target="id-fca8614a">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-f4a11728" relationshipref="id-bf5839ca" source="id-fca8614a" target="id-034eeaf2">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-1cfea286" relationshipref="id-95cd673b" source="id-fca8614a" target="id-3463729c">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-6715b9d1" relationshipref="id-166bd314" source="id-fca8614a" target="id-c7fea800">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3761" viewpoint="Business Process">
+      <label xml:lang="en">Business Process View</label>
+      <node identifier="id-3788" elementref="id-521" x="317" y="293" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3782" elementref="id-651" x="0" y="532" w="120" h="40">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3789" elementref="id-740" x="720" y="293" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3776" elementref="id-556" x="150" y="502" w="826" h="90">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-3778" elementref="id-572" x="330" y="522" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3779" elementref="id-564" x="170" y="522" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3781" elementref="id-580" x="500" y="522" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3780" elementref="id-588" x="660" y="522" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-de7a60fc" elementref="id-f20906e4" x="810" y="522" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-3791" elementref="id-514" x="531" y="144" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3792" elementref="id-507" x="467" y="234" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3783" elementref="id-650" x="137" y="54" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3770" elementref="id-596" x="287" y="24" w="587" h="100">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-3772" elementref="id-612" x="527" y="54" w="129" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3775" elementref="id-722" x="719" y="54" w="120" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3774" elementref="id-721" x="302" y="54" w="150" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-3790" elementref="id-733" x="307" y="144" w="140" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-44d2ca3d" elementref="id-069aa985" x="317" y="396" w="112" h="61">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-98f46634" elementref="id-8b23fb39" x="513" y="420" w="120" h="55">
+        <style>
+          <fillColor r="181" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-fd5a4ed7" elementref="id-243ac07e" x="160" y="648" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-05ccddfb" elementref="id-305dd86f" x="668" y="396" w="109" h="58">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <connection identifier="id-d8a3a65d" relationshipref="id-95f13189" source="id-3788" target="id-3783">
+        <bendpoint x="197" y="323" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3815" relationshipref="id-655" source="id-3782" target="id-3779">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3810" relationshipref="id-764" source="id-3789" target="id-3791">
+        <bendpoint x="724" y="173" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3809" relationshipref="id-762" source="id-3789" target="id-3792">
+        <bendpoint x="674" y="264" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3811" relationshipref="id-768" source="id-3789" target="id-3788">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-477489bb" relationshipref="id-4a214d41" source="id-3789" target="id-3775">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3798" relationshipref="id-659" source="id-3778" target="id-3781">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-49eff33e" relationshipref="id-3c83b583" source="id-3778" target="id-44d2ca3d">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3797" relationshipref="id-657" source="id-3779" target="id-3778">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3799" relationshipref="id-661" source="id-3781" target="id-3780">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-2525f5ed" relationshipref="id-caa19a08" source="id-3780" target="id-fd5a4ed7">
+        <bendpoint x="688" y="672" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-98672e59" relationshipref="id-68c53c53" source="id-3780" target="id-de7a60fc">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-97af4bdd" relationshipref="id-2c9adbd3" source="id-3780" target="id-05ccddfb">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3818" relationshipref="id-774" source="id-3791" target="id-3772">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3805" relationshipref="id-732" source="id-3783" target="id-3774">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-cc6af80f" relationshipref="id-2d89d4e7" source="id-3772" target="id-3775">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3794" relationshipref="id-728" source="id-3774" target="id-3772">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3806" relationshipref="id-756" source="id-3790" target="id-3788">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3820" relationshipref="id-772" source="id-3790" target="id-3774">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3807" relationshipref="id-758" source="id-3790" target="id-3791">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3808" relationshipref="id-760" source="id-3790" target="id-3792">
+        <bendpoint x="508" y="200" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-8f3a4c1f" relationshipref="id-b9c46b5d" source="id-98f46634" target="id-3781">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-f02be7f0" relationshipref="id-ec8dadf1" source="id-fd5a4ed7" target="id-3782">
+        <bendpoint x="100" y="684" />
+        <bendpoint x="52" y="684" />
+        <bendpoint x="52" y="648" />
+        <bendpoint x="52" y="612" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-595a5a60" relationshipref="id-b7f89158" source="id-fd5a4ed7" target="id-3780">
+        <bendpoint x="759" y="696" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3698" viewpoint="Business Process">
+      <label xml:lang="en">Organization Structure View</label>
+      <node identifier="id-3707" elementref="id-275" x="372" y="72" w="277" h="349">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+          <font name="Segoe UI" size="9" />
+        </style>
+        <node identifier="id-3719" elementref="id-352" x="432" y="228" w="155" h="60">
+          <style>
+            <fillColor r="0" g="255" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3711" elementref="id-282" x="432" y="132" w="155" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-bd42f08b" elementref="id-7a89bade" x="432" y="324" w="155" h="60">
+          <style>
+            <fillColor r="0" g="255" b="0" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-3c171445" elementref="id-599be9de" x="696" y="72" w="229" h="169">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-52170f02" elementref="id-3f6db80e" x="744" y="132" w="121" h="49">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-0ca06876" elementref="id-b40c2d73" x="96" y="72" w="229" h="169">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-f5b0e54d" elementref="id-00487683" x="144" y="132" w="121" h="49">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <connection identifier="id-59df0bfe" relationshipref="id-1fc33207" source="id-3711" target="id-3719">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-a72bbff5" relationshipref="id-3cf5b650" source="id-bd42f08b" target="id-3719">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-342bcb43" relationshipref="id-7f9abd95" source="id-52170f02" target="id-3711">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-f0159366" relationshipref="id-df8e9a8c" source="id-f5b0e54d" target="id-3711">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3722" viewpoint="Business Function">
+      <label xml:lang="en">Business Function View</label>
+      <node identifier="id-3733" elementref="id-514" x="228" y="48" w="372" h="481">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-3740" elementref="id-471" x="240" y="180" w="140" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3739" elementref="id-477" x="432" y="180" w="140" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-3736" elementref="id-489" x="341" y="288" w="140" h="60">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-fffdfb3d" elementref="id-069aa985" x="344" y="72" w="133" h="61">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-1316f81c" elementref="id-e67bdb18" x="288" y="408" w="275" h="97">
+          <style>
+            <fillColor r="255" g="255" b="181" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-3741" elementref="id-507" x="660" y="66" w="145" h="421">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3731" elementref="id-521" x="24" y="72" w="145" h="409">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <connection identifier="id-610aba16" relationshipref="id-605f158f" source="id-3740" target="id-3736">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-34e7dc52" relationshipref="id-f310c65e" source="id-3740" target="id-1316f81c">
+        <bendpoint x="312" y="324" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-093ac433" relationshipref="id-7f85b405" source="id-3740" target="id-3731">
+        <bendpoint x="204" y="228" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3749" relationshipref="id-1764" source="id-3739" target="id-3736">
+        <bendpoint x="434" y="264" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-4daba27e" relationshipref="id-cb8b36a5" source="id-3739" target="id-1316f81c">
+        <bendpoint x="516" y="324" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-65d12087" relationshipref="id-fef24f2f" source="id-3739" target="id-3741">
+        <bendpoint x="612" y="228" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-0aec2264" relationshipref="id-722e0a2e" source="id-3739" target="id-3740">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-0b4c82b0" relationshipref="id-4c3e755b" source="id-3736" target="id-1316f81c">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-12e6972a" relationshipref="id-b0bddc58" source="id-fffdfb3d" target="id-3739">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-a6351e42" relationshipref="id-2856cd8a" source="id-fffdfb3d" target="id-3740">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-fed015c1" relationshipref="id-f89eca07" source="id-1316f81c" target="id-3731">
+        <bendpoint x="264" y="468" />
+        <bendpoint x="252" y="468" />
+        <bendpoint x="240" y="468" />
+        <bendpoint x="228" y="468" />
+        <bendpoint x="216" y="468" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-60040dad" relationshipref="id-439d49e7" source="id-3741" target="id-3739">
+        <bendpoint x="612" y="192" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-513f58db" relationshipref="id-050377cd" source="id-3731" target="id-1316f81c">
+        <bendpoint x="228" y="432" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-e904334c" relationshipref="id-314875e6" source="id-3731" target="id-3740">
+        <bendpoint x="204" y="192" />
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3821">
+      <label xml:lang="en">Information Structure View</label>
+      <node identifier="id-3844" elementref="id-946" x="60" y="252" w="120" h="65">
+        <style>
+          <fillColor r="128" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3835" elementref="id-792" x="276" y="252" w="114" h="60">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3833" elementref="id-675" x="444" y="252" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3832" elementref="id-673" x="636" y="252" w="120" h="60">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3842" elementref="id-839" x="840" y="252" w="120" h="65">
+        <style>
+          <fillColor r="128" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-928cfa9d" elementref="id-939f302b" x="438" y="456" w="132" h="53">
+        <style>
+          <fillColor r="181" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-e86f73ee" elementref="id-bbcafed7" x="444" y="356" w="120" h="49">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-c311586a" elementref="id-ae7a6a13" x="450" y="120" w="120" h="61">
+        <style>
+          <fillColor r="255" g="255" b="128" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <connection identifier="id-0cef25c1" relationshipref="id-95f80f40" source="id-3844" target="id-3835">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3851" relationshipref="id-816" source="id-3833" target="id-3835">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-3850" relationshipref="id-814" source="id-3833" target="id-3832">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-8109aabd" relationshipref="id-e87fe7a7" source="id-3833" target="id-e86f73ee">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-a367549e" relationshipref="id-08cf3760" source="id-3842" target="id-3832">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-8c38b1ae" relationshipref="id-b3bccc0a" source="id-928cfa9d" target="id-e86f73ee">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-8a4456c0" relationshipref="id-c757a645" source="id-c311586a" target="id-3832">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-e489b0f6" relationshipref="id-47a0b327" source="id-c311586a" target="id-3833">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-646aa2d9" relationshipref="id-95126dde" source="id-c311586a" target="id-3835">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3865" viewpoint="Application Behavior">
+      <label xml:lang="en">Application Behavior View</label>
+      <node identifier="id-3885" elementref="id-946" x="108" y="120" w="120" h="73">
+        <style>
+          <fillColor r="0" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-3882" elementref="id-935" x="576" y="288" w="120" h="60">
+        <style>
+          <fillColor r="181" g="255" b="255" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-d0b3e99a" x="276" y="48" w="517" h="217" type="group">
+        <label xml:lang="en">Service Request</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-8fd52ddd" elementref="id-dae2a9db" x="300" y="84" w="181" h="121">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+          <node identifier="id-3878" elementref="id-891" x="324" y="132" w="123" h="41">
+            <style>
+              <fillColor r="181" g="255" b="255" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+        </node>
+        <node identifier="id-0fb82a03" elementref="id-23501cf6" x="540" y="84" w="193" h="145">
+          <style>
+            <fillColor r="128" g="128" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+          <node identifier="id-3879" elementref="id-897" x="576" y="120" w="145" h="37">
+            <style>
+              <fillColor r="181" g="255" b="255" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+          <node identifier="id-3880" elementref="id-903" x="576" y="180" w="145" h="37">
+            <style>
+              <fillColor r="181" g="255" b="255" />
+              <lineColor r="92" g="92" b="92" />
+            </style>
+          </node>
+        </node>
+      </node>
+      <connection identifier="id-c0ed3b55" relationshipref="id-2cfa31bb" source="id-3878" target="id-3885">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-16edf8ea" relationshipref="id-0345f4dc" source="id-3878" target="id-3879">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-267df8d6" relationshipref="id-d7aeb5e9" source="id-0fb82a03" target="id-3882">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-2f1c797f" relationshipref="id-5dac4ae3" source="id-3879" target="id-3880">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-3999" viewpoint="Product">
+      <label xml:lang="en">Business Product View</label>
+      <node identifier="id-4009" elementref="id-521" x="264" y="36" w="161" h="91">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-4008" elementref="id-1250" x="282" y="168" w="126" h="85">
+        <style>
+          <fillColor r="255" g="255" b="181" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+      </node>
+      <node identifier="id-4010" x="114" y="276" w="670" h="229" type="group">
+        <label xml:lang="en">Cloud Brokerage Services</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-4017" elementref="id-1214" x="414" y="390" w="121" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-4016" elementref="id-1239" x="594" y="330" w="150" h="66">
+          <style>
+            <fillColor r="0" g="128" b="192" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-4019" elementref="id-1220" x="425" y="320" w="110" h="53">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-4022" elementref="id-1196" x="138" y="390" w="125" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-4020" elementref="id-1208" x="270" y="330" w="131" h="34">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-5bf64ae5" elementref="id-5c972eb4" x="273" y="390" w="125" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-7b2f4cd6" elementref="id-671c9b62" x="146" y="320" w="110" h="53">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-a6734952" elementref="id-fc2473ad" x="138" y="444" w="110" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-be395a7f" elementref="id-39246e1e" x="281" y="444" w="110" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-15c45d11" elementref="id-ca2db67f" x="420" y="444" w="110" h="37">
+          <style>
+            <fillColor r="0" g="128" b="128" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-d4cb9601" elementref="id-670d256f" x="594" y="426" w="150" h="66">
+          <style>
+            <fillColor r="0" g="128" b="192" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <connection identifier="id-4024" relationshipref="id-1259" source="id-4009" target="id-4008">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+      <connection identifier="id-4023" relationshipref="id-1274" source="id-4008" target="id-4020">
+        <style>
+          <lineColor r="0" g="0" b="0" />
+        </style>
+      </connection>
+    </view>
+    <view identifier="id-16fe3cf9" viewpoint="Motivation">
+      <label xml:lang="en">Goal and Principle View</label>
+      <node identifier="id-ecc8b6ec" x="228" y="168" w="400" h="181" type="group">
+        <label xml:lang="en">Organizational Efficiency Goals</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-859942c2" elementref="id-f5674126" x="252" y="240" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-da42643d" elementref="id-3938617c" x="432" y="204" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-84fa8477" elementref="id-67316f1f" x="432" y="276" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-9c7d3573" x="228" y="24" w="400" h="121" type="group">
+        <label xml:lang="en">Performance Goals</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-55a6859d" elementref="id-b56d54a6" x="252" y="60" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-6c34185b" elementref="id-3764dcef" x="432" y="60" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+      <node identifier="id-aaabac4c" x="228" y="372" w="400" h="181" type="group">
+        <label xml:lang="en">Cost Goals</label>
+        <style>
+          <fillColor r="210" g="215" b="215" />
+          <lineColor r="92" g="92" b="92" />
+        </style>
+        <node identifier="id-4c3db4dc" elementref="id-66a2171b" x="252" y="444" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-961adbd9" elementref="id-af0e8c76" x="432" y="408" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+        <node identifier="id-39407926" elementref="id-3db08b5c" x="432" y="480" w="140" h="55">
+          <style>
+            <fillColor r="204" g="204" b="255" />
+            <lineColor r="92" g="92" b="92" />
+          </style>
+        </node>
+      </node>
+    </view>
+  </views>
+</model>
